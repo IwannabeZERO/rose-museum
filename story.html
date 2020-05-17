@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>玫瑰博物馆</title>
+	<style>
+		<!--
+			/*导航栏部分*/
+			header{width: 100%;
+				border-bottom:solid 10px rgba(188,188,188,0.50);
+				padding-top: 10px;
+				float: right;
+				height: 100px;}
+			/*logo样式*/
+			.logo{margin: 0;
+				float: left;
+				width: 200px;
+				position: relative;
+				top: -35px;
+				padding-left:50px;}
+			.search{width: 1000px;
+				height: auto;
+				display: inline-block;
+				padding-left: 50px;
+				padding-top: 20px;}/*搜索栏*/
+			.search input{
+				letter-spacing: 2px;
+				font-size: 18px;
+				margin-left: 380px;
+				height: 50px;
+				color: #909090;
+				background:rgba(98,98,98,0.40);
+				float: left;
+				width: 520px;}/*搜索框*/
+			.search button{
+				letter-spacing: 2px;
+				font-size: 18px;
+				width: 60px;
+				margin-left: 20px;
+				color: #E4E4E4;
+				background-color: rgba(143,143,143,0.40);
+				height: 50px;}/*搜索按钮*/
+			.navigationBar{width:600px;
+				height:50px;
+				float: right;
+				margin: 0;
+				padding: 0;}
+			/*列表样式*/
+			ul{list-style-type:none;
+				overflow:hidden;
+				display:inline;}
+			li{float: right;/*列表项目排列方向*/}
+			li a:link,
+			li a:visited{display:block;
+				height: 50px;
+				width:130px;
+				font-weight:bold;
+				font-size: 28px;
+				color:#FFFFFF;
+				background-color:rgba(255,255,255,0.00);
+				text-align:center;
+				padding:20px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-decoration:none;
+				text-transform:uppercase;}/*列表项目样式*/
+			#story{
+				z-index: 2;
+				background-color:rgba(65,65,65,0.90);
+			}/*将当前网页导航以深色标识*/
+			li a:hover,
+			li a:active{background-color:rgba(148,148,148,0.40);}
+		
+			/*正文部分*/
+		
+			*{margin: 0;
+				padding: 0;
+				border: 0;}
+			main{margin: 0;
+				padding: 0;
+				height: auto;}
+			/*背景图样式*/
+			.story1,.story2,.story3{width: 100%;;
+				background-size:cover;/*背景图适配容器大小*/
+				padding: 0;
+				margin: 0;}
+			.story1{background-image: url(img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0614.webp);
+				background-repeat:no-repeat;
+				padding-top: 300px;
+				height:758px;}
+			.story2{background-image: url(img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0615.webp);
+				background-repeat:no-repeat;
+				padding-top: 350px;
+				height: 840px;;}
+			.story3{background-image: url(img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0616.webp);
+				background-repeat:no-repeat;
+				padding-top: 350px;
+				height: 840px;;}
+			/*文字背景样式*/
+			.background{background-color: rgba(216,216,216,0.50);
+				margin: 0px auto;
+				width: 1600px;
+				padding: 40px;}
+			/*文字样式*/
+			.passage{text-align: justify;
+				font-family: abel;
+				text-indent: 100px;
+				line-height: 1.5;
+				letter-spacing: 2px;
+				font-size: 30px;
+				color: #000000}
+			/*页脚样式*/
+			footer{margin: 0;
+				margin-top: 320px;
+				padding: 0;}
+			.comment{text-align: center;
+				font-family: abel;
+				font-size: 10px;
+				color: #FFFFFF} 
+			.btn{
+				position: fixed;
+				right: 55px;
+				bottom: 100px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				border: none;}
+			.btn2{
+				position: fixed;
+				right: 55px;
+				bottom: 40px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				border: none;}
+		-->
+	</style>
+</head>
+
+<body>
+	<!--导航栏部分-->
+	<header>
+			<div class="logo" id="logo">
+				<a href="index.html" target="_self"><img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0601.png" alt="logo" title="logo"></a>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="&nbsp;&nbsp;搜索你想了解的玫瑰" autocomplete="on">
+				<button>
+					搜索
+				</button>
+			</div>
+			<nav class="navigationBar">
+				<ul>
+					<li><a id="story" href="story.html">人文故事</a></li>
+					<li><a id="value" href="value.html">运用价值</a></li>
+					<li><a id="plant" href="plant.html">栽培技术</a></li>
+					<li><a id="type" href="type.html">品种分类</a></li>
+				</ul>
+			</nav>
+	</header>
+	<!--主体部分-->
+	<main>
+		<div class="story1">
+			<div class="background"><p  class="passage">古罗马时期，二月十四日是为表示对约娜的尊敬而设的节日。约娜是罗马众神的皇后，罗马人同时将她尊奉为妇女和婚姻之神。接下来的二月十五日被“卢帕撒拉节”，是用来对约娜治下的其他众神表示尊敬的节日。<br></p><p class="passage">在古罗马，年轻人和少女的生活是被严格分开的。然而，在卢帕撒拉节，小伙子们可以选择一个自己心爱的娘的名字刻在花瓶上。这样，过节的时候，小伙子就可以与自己选择的姑娘一起跳舞，庆祝节日。如果被选中的姑娘也对小伙子有意的话，他们便可一直配对，而且最终他们会坠入爱河并一起步入教堂结婚。后人为此而将每年的二月十四日定为情人节。</p>
+			</div>
+		</div>
+		<div class="story2">
+			<div class="background">
+			<p  class="passage">大约在公元三世纪的罗马，那时恺撒已经死去快三百年了，暴君Claudius当政。当时，罗马内外战争频仍，民不聊生。为了补足兵员，将战争进行到底，Claudius下令，凡是一定年龄范围内的男子，都必须进入罗马军队，以生命为国家效劳。自此，丈夫离开妻子，少年离开恋人。于是整个罗马便被笼罩在绵长的相思中。对此，暴君大为恼火。为了达到自己的目的，他竟然下令禁止国人举行结婚典礼，甚至要求已经结婚的毁掉婚约。<br></p><p class="passage">然而，暴政禁止不了爱情。就在暴君的国都里，居住着一位德高望重的修士，他就是Valentine,我们的主人公。他不忍看到一对对伴侣就这样生离死别，于是为前来请求帮助的情侣秘密地主持上帝的结婚典礼。一时间，这一令人振奋的消息在整个国度传开，更多的情侣秘密地赶来请求修士的帮助。<br></p><p class="passage">但是，事情很快还是被暴君知晓了，于是他再一次显示了残暴面目——将修士打进大牢，最终折磨致死。修士死的那一天是2月14日，公元270年的2月14日。人们为了纪念这个敢于与暴君斗争的人，渐渐地使得2月14日成为一个节日。很多世纪过去了，人们再也记不得Claudius的大名，再也记不得他的权杖与宝剑，但依然会纪念Valentine修士，因为那个日子是Valentine’sday,是情人节。</p>
+			</div>
+		</div>
+		<div class="story3">
+			<div class="background"><p  class="passage">一本英语辞典上注释说，范泰伦节（情人节）二月十四日，来源于古罗马的牧神节。据说鸟类在这一天开始交配。那时的风俗是：在牧神节期间，每个青年男子从一只盒子里抽签，盒子里放的是写有青年女子姓名的条子。抽到谁，谁就成为那个青年男子的心上人。后来这个节日改为纪念一位叫瓦伦丁的基督教圣徒。<br></p><p class="passage">古罗马青年基督教传教士圣瓦伦丁，冒险传播基督教义，被捕入狱，感动了老狱吏和他双目失明的女儿，得到了他们悉心照料。临刑前圣瓦伦丁给姑娘写了封信，表明了对姑娘的深情。在他被处死的当天，盲女在他墓前种了一棵开红花的杏树，以寄托自己的情思。这一天就是2月14日。现在，在情人节里，许多小伙子还把求爱的圣瓦伦丁的明信片做成精美的工艺品，剪成蝴蝶和鲜花，以表示心诚志坚。姑娘们晚上将月桂树叶放在枕头上，希望梦见自己的情人。通常在情人节中，以赠送一枝红玫瑰来表达情人之间的感情。将一枝半开的红玫瑰作为情人节送给女孩的最佳礼物，而姑娘则以一盒心形巧克力作为回赠的礼物。</p>
+			</div>
+			
+			<!--回到主页以及回到顶部按钮-->
+			<div class="btn">
+				<a href="#top" target="_self"><img src="img/top.png" alt="回到顶部" width="50" height="50"></a><!--在W3C验证中width和height属性值中不能带有单位px，原因不明？-->
+			</div>
+			<div class="btn2">
+				<a href="index.html" target="_self"><img src="img/home.png" alt="返回主页" width="50" height="50"></a><!--在W3C验证中width和height属性值中不能带有单位px，原因不明？-->
+			</div>
+			
+			<!--页脚部分-->
+			<footer>
+				<hr><!--无法显示，原因不明-->
+			<p class="comment">
+				以上图片及文字均来源于网络，如有侵权请联系我们删除。
+			</p>
+			<p class="comment">
+				Contact information: <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=reinag@foxmail.com" target="_blank">E-mail</a>.
+			</p>
+			</footer>
+		</div>
+	</main>
+		
+</body>
+</html>
