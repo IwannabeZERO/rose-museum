@@ -3,143 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>玫瑰博物馆</title>
-		<style>
-			<!--
-			/*导航栏部分*/
-			header{width: 100%;
-				border-bottom:solid 10px rgba(188,188,188,0.50);
-				padding-top: 10px;
-				float: right;
-				height: 100px;}
-			/*logo样式*/
-			.logo{margin: 0;
-				float: left;
-				width: 200px;
-				position: relative;
-				top: -35px;
-				padding-left:50px;}
-			.search{width: 1000px;
-				height: auto;
-				display: inline-block;
-				padding-left: 50px;
-				padding-top: 20px;}/*搜索栏*/
-			.search input{
-				letter-spacing: 2px;
-				font-size: 18px;
-				margin-left: 380px;
-				height: 50px;
-				color: #909090;
-				background:rgba(98,98,98,0.40);
-				float: left;
-				width: 520px;}/*搜索框*/
-			.search button{
-				letter-spacing: 2px;
-				font-size: 18px;
-				width: 60px;
-				margin-left: 20px;
-				color: #E4E4E4;
-				background-color: rgba(143,143,143,0.40);
-				height: 50px;}/*搜索按钮*/
-			.navigationBar{width:580px;
-				height:50px;
-				float: right;
-				margin: 0;
-				padding: 0;}
-			/*列表样式*/
-			ul{list-style-type:none;
-				overflow:hidden;
-				display:inline;}
-			li{float: right;/*列表项目排列方向*/}
-			li a:link,
-			li a:visited{display:block;
-				height: 50px;
-				width:115px;
-				font-weight:bold;
-				font-size: 28px;
-				color:#FFFFFF;
-				background-color:rgba(255,255,255,0.00);
-				text-align:center;
-				padding:20px;
-				padding-left: 10px;
-				padding-right: 10px;
-				text-decoration:none;
-				text-transform:uppercase;}/*列表项目样式*/
-			#type{
-				background-color:rgba(65,65,65,0.80);
-			}/*将当前网页导航以深色标识*/
-			li a:hover,
-			li a:active{background-color:rgba(148,148,148,0.40);}
-			/*导航栏部分*/
-			*{
-				padding: 0;
-				margin: 0;
-				border: 0;
-			}
-			footer{margin: 0;
-				padding-bottom: 10px;
-				padding: 0;}/*页脚样式*/
-			.comment{text-align: center;
-				font-family: abel;
-				font-size: 10px;
-				color: #FFFFFF}/*注释样式*/
-			.containerA{border-style: none;
-				background-color: #B5C4B1;
-				width: 600px;
-				height: 200px;
-				padding: 15px;
-				float: left;
-				text-align: justify;
-				margin-left: 120px;}/*内容框1*/
-			.containerB{border-style: none;
-				background-color: transparent;
-				width: 600px;
-				height: 200px;
-				padding: 15px;
-				float: left;
-				text-align: justify;}/*内容框2*/
-			.containerC{border-style: none;
-				background-color: transparent;
-				width: 600px;
-				height: 200px;
-				padding: 15px;
-				float: left;
-				text-align: justify;
-				margin-left: 120px;}/*内容框3*/
-			.containerD{border-style: none;
-				background-color: #B5C4B1;
-				width: 600px;
-				height: 200px;
-				padding: 15px;
-				float: left;
-				text-align: justify;}/*内容框4*/
-			.text{font-family: SimSun;
-				font-size: 20px;
-				color: #FFFFFF;
-				margin: 0 auto;
-				width: 400px;
-				height: auto;
-				padding: 0;}/*文本样式*/
-			body{background-color: #96A48B;}/*网页背景色*/
-			.clear{clear: both;}/*清除样式*/
-			.btn{
-				position: fixed;
-				right: 55px;
-				bottom: 100px;
-				width: 50px;
-				height: 50px;
-				border-radius: 50%;
-				border: none;}
-			.btn2{
-				position: fixed;
-				right: 55px;
-				bottom: 40px;
-				width: 50px;
-				height: 50px;
-				border-radius: 50%;
-				border: none;}
-			
-			-->
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/type.css"/>
 		<!--===因为不知道div框中文字要怎么设置垂直居中，尝试了很多次都没办法达到，所以就用调节相对位置的方式来改变文字位置了===-->	
 	</head>
 
@@ -167,155 +31,205 @@
 		<main><!--内容开始-->
 			<div class="containerA"><!--玫瑰品种1 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0617.webp" alt="大桃红" title="大桃红" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 190px">
-				大桃红：<br>桃红色玫瑰的代表，色彩饱和，花型漂亮，层次感强。花语：我已经被你触动、有一点点喜欢你。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 190px">
+					大桃红：<br>桃红色玫瑰的代表，色彩饱和，花型漂亮，层次感强。花语：我已经被你触动、有一点点喜欢你。
+					</p>
+				</span>
 			</div>
 			<div class="containerB"><!--玫瑰品种2 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0618.webp" alt="戴安娜" title="戴安娜" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 175px">
-				戴安娜：<br>寓意着两个人相爱是最大的幸福，而想念却是最甜蜜的痛苦。花语是幸福、优雅、温柔、欢乐和感激。送戴安娜玫瑰是在表达自己的爱意，只是表达的比较委婉、含蓄。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 175px">
+					戴安娜：<br>寓意着两个人相爱是最大的幸福，而想念却是最甜蜜的痛苦。花语是幸福、优雅、温柔、欢乐和感激。送戴安娜玫瑰是在表达自己的爱意，只是表达的比较委婉、含蓄。
+					</p>
+				</span>
 			</div>
 			<div class="containerC"><!--玫瑰品种3 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0619.webp" alt="多洛塔" title="多洛塔" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 410px">
-				多洛塔：<br>颜色是复古色，花瓣边缘呈波浪状，且有四个花心，看上去非常浪漫，惹人喜爱。因此它的花语是梦幻，看上去美的不切实际。花语：爱情的守护。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 410px">
+					多洛塔：<br>颜色是复古色，花瓣边缘呈波浪状，且有四个花心，看上去非常浪漫，惹人喜爱。因此它的花语是梦幻，看上去美的不切实际。花语：爱情的守护。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种4 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0620.webp" alt="粉佳人" title="粉佳人" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 410px">
-				粉佳人：<br>花语：初恋、感动、红粉佳人，不仅代表自己心里的爱，还是一种很好的赞美。它和普通的粉色玫瑰一样，代表着快乐、幸福、铭记于心。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 410px">
+					粉佳人：<br>花语：初恋、感动、红粉佳人，不仅代表自己心里的爱，还是一种很好的赞美。它和普通的粉色玫瑰一样，代表着快乐、幸福、铭记于心。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种5 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0621.webp" alt="黑魔术" title="黑魔术" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 635px">
-				黑魔术：<br>花语：温柔的心，深沉高贵的灵魂。它就如同一个优雅而低调的人，不会刻意人前彰显，却在细节处体现出由内而外的精致，让拥有它的人也不由自主地矜贵起来。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 635px">
+					黑魔术：<br>花语：温柔的心，深沉高贵的灵魂。它就如同一个优雅而低调的人，不会刻意人前彰显，却在细节处体现出由内而外的精致，让拥有它的人也不由自主地矜贵起来。
+					</p>
+				</span>
 			</div>
 			<div class="containerB"><!--玫瑰品种6 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0622.webp" alt="红袖" title="红袖" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 635px">
-				红袖：<br>花语：红颜知己”或者“解语花”，适合送给身边心意相通的女性，红袖添香夜读书，说的是旧时书生学习时，身边有年轻貌美的女子伴读。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 635px">
+					红袖：<br>花语：红颜知己”或者“解语花”，适合送给身边心意相通的女性，红袖添香夜读书，说的是旧时书生学习时，身边有年轻貌美的女子伴读。
+					</p>
+				</span>
 			</div>
 			<div class="containerC"><!--玫瑰品种7 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0623.webp" alt="金香玉" title="金香玉" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 840px">
-				金香玉：<br>对于友情的花语：你我的友情如同金玉一般坚固而珍贵；而对于爱情的花语：原谅我，对不起。它代表热情真爱，还代表为爱道歉。重祝福，不贞、嫉妒、失恋、道歉。不过在有些地方，黄玫瑰还代表着等待，等待属于你们的爱情。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 840px">
+					金香玉：<br>对于友情的花语：你我的友情如同金玉一般坚固而珍贵；而对于爱情的花语：原谅我，对不起。它代表热情真爱，还代表为爱道歉。重祝福，不贞、嫉妒、失恋、道歉。不过在有些地方，黄玫瑰还代表着等待，等待属于你们的爱情。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种7 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0624.webp" alt="卡罗拉" title="卡罗拉" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 855px">
-				卡罗拉：<br>属于玫瑰中的精品，它的花色十分经典，花朵饱满丰富，并且盛开之后明艳动人。因此，将卡罗拉玫瑰赠送给心爱的人，寓意十分美好，可以表达一种真挚之情。花语：幸福而浪漫的爱情。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 855px">
+					卡罗拉：<br>属于玫瑰中的精品，它的花色十分经典，花朵饱满丰富，并且盛开之后明艳动人。因此，将卡罗拉玫瑰赠送给心爱的人，寓意十分美好，可以表达一种真挚之情。花语：幸福而浪漫的爱情。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种8 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0625.webp" alt="蜜桃雪山" title="蜜桃雪山" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 1085px">
-				蜜桃雪山：<br>花语：爱你是最大的幸福，想你却是甜蜜的痛苦。它也是钟情的象征，因此非常适合将它赠送给爱的人。它是很受欢迎的品种，花色为香槟色，也经常出现在婚礼等一些很重大的场合。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 1085px">
+					蜜桃雪山：<br>花语：爱你是最大的幸福，想你却是甜蜜的痛苦。它也是钟情的象征，因此非常适合将它赠送给爱的人。它是很受欢迎的品种，花色为香槟色，也经常出现在婚礼等一些很重大的场合。
+					</p>
+				</span>
 			</div>
 			<div class="containerB"><!--玫瑰品种9 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0626.webp" alt="苏醒" title="苏醒" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 1120px">
-				苏醒：<br>颜色呈水粉色,就像少女脸颊上的绯红。花语：情窦初开的意思。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 1120px">
+					苏醒：<br>颜色呈水粉色,就像少女脸颊上的绯红。花语：情窦初开的意思。
+					</p>
+				</span>
 			</div>
 			<div class="containerC"><!--玫瑰品种10 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0627.webp" alt="坦尼克" title="坦尼克" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 1350px">
-				坦尼克：<br>花形优美，纯白色大花头，白玫瑰界的当家花旦。花语：圣洁、纯洁的爱情，你是我的。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 1350px">
+					坦尼克：<br>花形优美，纯白色大花头，白玫瑰界的当家花旦。花语：圣洁、纯洁的爱情，你是我的。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种11 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0628.webp" alt="糖果雪山" title="糖果雪山" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 1340px">
-				糖果雪山：<br>它是很常见的花束配材，花朵很大，颜色也很鲜艳，属于比较耐看的品种。花语：纯洁、天真、高贵、甜蜜，它也是爱情的象征。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 1340px">
+					糖果雪山：<br>它是很常见的花束配材，花朵很大，颜色也很鲜艳，属于比较耐看的品种。花语：纯洁、天真、高贵、甜蜜，它也是爱情的象征。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种12 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0629.webp" alt="影星" title="影星" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 1560px">
-				影星：<br>这种玫瑰是粉色玫瑰中最大的一种花朵大小，仅次于红玫瑰，是一种十分好看的玫瑰。花语：我为你魂牵梦绕，为你着迷，被你迷的神魂颠倒。
-				</p>
+					<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 1560px">
+					影星：<br>这种玫瑰是粉色玫瑰中最大的一种花朵大小，仅次于红玫瑰，是一种十分好看的玫瑰。花语：我为你魂牵梦绕，为你着迷，被你迷的神魂颠倒。
+					</p>
+				</span>
 			</div>
 			<div class="containerB"><!--玫瑰品种13 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0630.webp" alt="紫皇后" title="紫皇后" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 1570px">
-				紫皇后：<br>花形端庄繁复、颜色纯正饱满，倍显高贵。花语：沉静，高贵，成熟的魅力。适合送给所有成熟而独立的优雅女性。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 1570px">
+					紫皇后：<br>花形端庄繁复、颜色纯正饱满，倍显高贵。花语：沉静，高贵，成熟的魅力。适合送给所有成熟而独立的优雅女性。
+					</p>
+				</span>
 			</div>
 			
 			<div class="containerC"><!--玫瑰品种14 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0631.webp" alt="红羽" title="红羽" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 1800px">
-				红羽：<br>红羽玫瑰是彩玫中的优良品种，被称为玫瑰花中的“花中之冠”，在颜色上比较偏向于玫红色，因为季节的不同，色彩差别也很大。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 1800px">
+					红羽：<br>红羽玫瑰是彩玫中的优良品种，被称为玫瑰花中的“花中之冠”，在颜色上比较偏向于玫红色，因为季节的不同，色彩差别也很大。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种15 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0632.webp" alt="假日公主" title="假日公主" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 1800px">
-				假日公主：<br>花语：快乐、笑容、美好的心情、愿你开怀每一天。令所有心情愉悦的祝福都能在假日公主玫瑰身上得到解释。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 1800px">
+					假日公主：<br>花语：快乐、笑容、美好的心情、愿你开怀每一天。令所有心情愉悦的祝福都能在假日公主玫瑰身上得到解释。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种16 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0633.webp" alt="金枝玉叶" title="金枝玉叶" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 2005px">
-				金枝玉叶：<br>金枝玉叶玫瑰是鲜黄色，可以代表友情、祝福、爱情、等待和道歉。花语：高贵、幸福、永结同心以及血脉相连。寓意着最忠贞的情感，白头偕老的美好祝愿，对彼此感情的一种祝福。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 2005px">
+					金枝玉叶：<br>金枝玉叶玫瑰是鲜黄色，可以代表友情、祝福、爱情、等待和道歉。花语：高贵、幸福、永结同心以及血脉相连。寓意着最忠贞的情感，白头偕老的美好祝愿，对彼此感情的一种祝福。
+					</p>
+				</span>
 			</div>
 			<div class="containerB"><!--玫瑰品种17 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0634.webp" alt="冷美人" title="冷美人" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 2015px">
-				冷美人：<br>花语：浪漫真情，表达唯美浪漫的真挚感情。还有一个花语是珍贵独特，代表你在我心中是最独特的，没有人可以代替。同时它有一个美丽的传说，所以增添了只爱你这个意思。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 2015px">
+					冷美人：<br>花语：浪漫真情，表达唯美浪漫的真挚感情。还有一个花语是珍贵独特，代表你在我心中是最独特的，没有人可以代替。同时它有一个美丽的传说，所以增添了只爱你这个意思。
+					</p>
+				</span>
 			</div>
 			<div class="containerC"><!--玫瑰品种18 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0635.webp" alt="荔枝" title="荔枝" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 2235px">
-				荔枝：<br>花色优雅纯洁，是淡淡的粉色，会散发淡淡的香气，闻起来沁人心脾。散发出来的花香让爱情变得更加甜蜜，是对恋人守护一生的承诺和坚定。花语：守护、甜蜜的爱恋、初恋、忠贞不二。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 2235px">
+					荔枝：<br>花色优雅纯洁，是淡淡的粉色，会散发淡淡的香气，闻起来沁人心脾。散发出来的花香让爱情变得更加甜蜜，是对恋人守护一生的承诺和坚定。花语：守护、甜蜜的爱恋、初恋、忠贞不二。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种19 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0636.webp" alt="迷恋" title="迷恋" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 2245px">
-				迷恋：<br>迷恋玫瑰花的姿态比较魅力，颜色比较纯，颜色有一种渐变的感觉，里面是由粉色包裹，外面则是有一层淡淡的绿色。花语：感动的爱、单纯而美好的恋爱等。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 2245px">
+					迷恋：<br>迷恋玫瑰花的姿态比较魅力，颜色比较纯，颜色有一种渐变的感觉，里面是由粉色包裹，外面则是有一层淡淡的绿色。花语：感动的爱、单纯而美好的恋爱等。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种20 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0637.webp" alt="小白兔" title="小白兔" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 2485px">
-				小白兔：<br>中间带一层浅粉色，外围花瓣为白色的花，给人以清新淡雅，别具一格的感觉。花语：爱与美兼有，勇敢智慧，少女心等。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 2485px">
+					小白兔：<br>中间带一层浅粉色，外围花瓣为白色的花，给人以清新淡雅，别具一格的感觉。花语：爱与美兼有，勇敢智慧，少女心等。
+					</p>
+				</span>
 			</div>
 			
 			<div class="containerB"><!--玫瑰品种21 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0638.webp" alt="奥斯汀" title="奥斯汀" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 2465px">
-				奥斯汀：<br>一款会变色的玫瑰花,开始时如锦缎般的绯红色,开放后便是气场强大的红,最后慢慢变成紫色调,再配之金色的花蕊,是款非常别具一二的永生花玫瑰。花语：守护的爱，也暗喻无论是守护爱情，守护亲情，或是百守护友情。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 2465px">
+					奥斯汀：<br>一款会变色的玫瑰花,开始时如锦缎般的绯红色,开放后便是气场强大的红,最后慢慢变成紫色调,再配之金色的花蕊,是款非常别具一二的永生花玫瑰。花语：守护的爱，也暗喻无论是守护爱情，守护亲情，或是百守护友情。
+					</p>
+				</span>
 			</div>
 			<div class="containerC"><!--玫瑰品种22 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0639.webp" alt="海洋之歌" title="海洋之歌" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 2720px">
-				海洋之歌：<br>看起来十分的柔和典雅，花香闻起来也十分的古典清幽，仿佛有种淡淡的茶香味。花语：永恒的爱情和浪漫真情的意思。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 2720px">
+					海洋之歌：<br>看起来十分的柔和典雅，花香闻起来也十分的古典清幽，仿佛有种淡淡的茶香味。花语：永恒的爱情和浪漫真情的意思。
+					</p>
+				</span>
 			</div>
 			<div class="containerD"><!--玫瑰品种23 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0640.webp" alt="玛丽亚" title="玛丽亚" width="200" height="200">
-				<p class="text" style="position: absolute;left: 980px;top: 2695px">
-				玛丽亚：<br>玛丽亚被誉为“会变色的玫瑰”，含苞待放的时候，花心略粉红，花瓣可能会呈现白色，当花苞逐渐绽放的时候，不仅花心颜色会变深，花瓣颜色更会神奇地变成粉红色。花语：感动、爱的宣言、铭记于心和初恋。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 980px;top: 2695px">
+					玛丽亚：<br>玛丽亚被誉为“会变色的玫瑰”，含苞待放的时候，花心略粉红，花瓣可能会呈现白色，当花苞逐渐绽放的时候，不仅花心颜色会变深，花瓣颜色更会神奇地变成粉红色。花语：感动、爱的宣言、铭记于心和初恋。
+					</p>
+				</span>
 			</div>
 			<div class="containerA"><!--玫瑰品种24 花语、简介-->
 				<img src="img/201818340422-wanyi-201812340708-gaojie-201812340705-dengjiali-0641.webp" alt="泰姬" title="泰姬" width="200" height="200">
-				<p class="text" style="position: absolute;left: 350px;top: 2960px">
-				泰姬：<br>它是世人心中对于爱情的美好向往。花语：爱的泪珠。象征着生死相依,不离不弃的爱情。
-				</p>
+				<span style="cursor:Crosshair">
+					<p class="text" style="position: absolute;left: 350px;top: 2960px">
+					泰姬：<br>它是世人心中对于爱情的美好向往。花语：爱的泪珠。象征着生死相依,不离不弃的爱情。
+					</p>
+				</span>
 			</div>
 			
 		</main>	<!--内容结束-->
